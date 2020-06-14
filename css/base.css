@@ -1,0 +1,229 @@
+*,::before,::after{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-tap-highlight-color:transparent;
+}
+body{
+	width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+h6,h5,h4,h3,h2,h1{margin:0;padding:0;font-size:100%;font-weight:normal;}
+ol,ul,li{list-style:none outside none;}
+.clearfix::before,.clearfix::after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+p {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+div:after, dl:after, ul:after, .clearfix:after {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+    content: ".";
+}
+.header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 50px;
+	width: 100%;
+	background: url('../images/headerBg.jpg') 0 0 repeat-x;
+	opacity: 0.85;
+  filter:alpha(opacity=85); 
+	z-index: 100;
+  box-shadow: 3px 0 3px rgba(6,0,1,0.5);
+} 
+.logo{
+	width: 150px;
+	height: 150px;
+  background: rgba(255,255,255,0.90);
+  position: absolute;
+	left: 12%;
+	top: 0;
+	z-index: 100;
+}
+.logo img{
+	width: 130px;
+	height: 130px;
+  margin: 0 10px;
+	z-index: 102;
+}
+.nav{
+  position: absolute;
+  font-size: 16px;
+  margin: 0 0 0 30%;
+  line-height: 50px
+}
+.nav a{
+	margin:0 30px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	color: #000000;
+}
+.header .nav a.here, .header .nav a:hover, .header .nav a:active {
+  color: #c84942;
+  border-bottom: 3px solid #c84942;
+}
+.userinfo a:hover, .userinfo a:active{
+  border: 2px solid #c84942;
+  color: #c84942;
+  background: #ffffff;
+}
+.userinfo a{
+  width: 30px;
+  height: 30px;
+  top: 9px;
+  background: #413d3b;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  text-transform: capitalize;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.login{
+  right: 25px;
+}
+.register{
+  right: 80px;
+}
+
+.topSlideMenu{
+  display:none;
+  width:32px;
+  height:32px;
+  overflow:hidden;
+  position:absolute;
+  right:20px;
+  top:50%;
+  margin-top:-12px;
+}
+.topSlideMenu span{
+  display:block;
+  width:15%;
+  height:4px;
+  background-color:#413d3b;
+  overflow:hidden;
+  margin-bottom:5px;
+  margin-left: 10px;
+}
+.topSlideMenuNav{
+  display:none;
+  background: url('../images/headerBg.jpg');
+  position:absolute;
+  left:0;
+  top:50px;
+  width:100%;
+  height:50px;
+  z-index:100;
+}
+.topSlideMenuNav a{
+  float:left;
+  display:block;
+  color:#000000;
+  font-size:18px;
+  text-decoration: none;
+}
+.topSlideMenuNav a:hover{
+  color: #c84942;
+  border-bottom: 3px solid #c84942;
+}
+@media(max-width:1030px){
+  .header{height:50px;}
+  .header .nav{display:none;}
+  .topSlideMenu{display:block;}
+  .header .logo{background: none;width: 0px; height:0px; }
+  .header .logo img{width: 50px; height: 50px; margin: 0 10px;}
+  .login{right: 100px;}
+	.register{right: 150px;}
+	.topSlideMenuNav{height:auto;}
+	.topSlideMenuNav a{float:none;text-align: center;}
+}
+@media(max-width:1277px) and (min-width: 1020px){
+  .header{height:50px;}
+  .header .nav{display:none;}
+  .topSlideMenu{display:block;}
+  .header .logo{background: none;width: 0px; height:0px; }
+  .header .logo img{width: 50px; height: 50px; margin: 0 10px;}
+  .login{right: 100px;}
+	.register{right: 150px;}
+	.topSlideMenuNav a{margin:10px 0 10px 10%;}
+}
+@media(min-width:1277px){
+  .header{height:50px;}
+  .topSlideMenu,.topSlideMenu span,.topSlideMenuNav,.topSlideMenuNav a,.topSlideMenuNav a:hover{display:none;visibility: hidden;}
+  .header .nav{display:block;}
+    
+}
+
+.footer{
+  width: 100%;
+  height: 60px;
+  background: #413d3b;
+  color:#b7b4a9;
+  font-size: 12px;
+  clear: both;
+}
+.footer .span1{
+  width: 100%;
+  line-height: 60px;
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+}
+.footer .span2{
+  position: absolute;
+  line-height: 60px;
+  right: 50px;
+}
+
+
+
+.title{
+  text-align:center;
+  color:#c84942;
+  font-size:24px;
+  overflow:hidden;
+}
+.title strong{
+  display:inline-block;
+  position:relative;
+  font-weight:normal;
+}
+.title span{
+  width:100px;
+  height:2px;
+  overflow:hidden;
+  background-color:#c84942;
+  font-size:1px;
+  position:absolute;
+  top:50%;
+  display:inline-block;
+}
+.title .lineL{
+  left:-120px;
+}
+.title .lineR{
+  right:-120px;
+}
+
+

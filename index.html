@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/poposlides.js"></script> 
+	<link rel="stylesheet" href="jquery-ui-1.12.0.custom/jquery-ui.css" />
+    <script src="jquery-ui-1.12.0.custom/jquery-ui.js"></script>
+</head>
+<body>
+    <!-- 顶部 -->
+	<header class="header">
+		<!-- logo随滑动显示或隐藏效果 -->
+		<a href="./index.html"><div class="logo"><img src="images/logo.png" alt=""></div></a>
+		<nav class="nav">
+			<a href="./index.html" class="here">首页</a>
+			<a href="./endangered-animals.html">濒危动物</a>
+			<a href="./animal-news.html">动物新闻</a>
+			<a href="./public-benefit.html">公益活动</a>
+			<a href="./organization.html">相关组织</a>
+			<a href="./about-us.html">关于我们</a>
+		</nav>
+		<div class="userinfo">
+			<a href="#" class="register">注册</a>
+			<a href="#" class="login">登录</a>
+		</div>
+
+		<!-- 随屏幕大小的变化而变化效果 -->
+		<a href='#' class='topSlideMenu'><span></span><span></span><span></span></a>
+		<div class='topSlideMenuNav'>
+			<a href="./index.html" class="here">首页</a>
+			<a href="./endangered-animals.html">濒危动物</a>
+			<a href="./animal-news.html">动物新闻</a>
+			<a href="./public-benefit.html">公益活动</a>
+			<a href="./organization.html">相关组织</a>
+			<a href="./about-us.html">关于我们</a>
+		</div>
+	</header>
+	<!-- ui插件 对话框 -->
+	<!-- 注册对话框 -->
+	<div id="dialog-form" >
+        <h1>立即加入——完全免费！</h1>
+        <p class="validateTips"></p> 
+        <form name="myForm">
+            <fieldset>
+            	<!-- ajax用户检测 -->
+                <label for="name">用户名<span>（6~18个字符，可使用字母、数字、下划线）</span></label>
+                <input type="text" name="myName" id="name" class="text ui-widget-content ui-corner-all">
+                <label for="password">密码<span>（6~16个字符，区分大小写）</span></label>
+                <input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all">
+                <label for="com_password">确认密码<span>（请再次填写密码）</span></label>
+                <input type="password" name="com_password" id="com_password" value="" class="text ui-widget-content ui-corner-all">
+            </fieldset>
+        </form>
+    </div>
+    <!-- ui插件 对话框 -->
+    <!-- 登录对话框 -->
+    <div id="dialog-form1" >
+        <h1>欢迎登录</h1>
+        <p class="validateTips"></p> 
+        <form name="myForm">
+            <fieldset>
+            	<!-- ajax用户检测 -->
+                <label for="name">用户名<span>（6~18个字符）</span></label>
+                <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+                <label for="password">密码<span>（6~16个字符，区分大小写）</span></label>
+                <input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all">
+            </fieldset>
+        </form>
+    </div>
+	<!-- 轮播图 -->
+	<div class="slides-box">
+		    <ul class="slides">
+		      <li style="background: url('images/banner01.jpg') center center no-repeat;background-size: cover;">
+		          <div class="t">
+		            <h1>关爱生命 停止杀戮</h1>               
+		            <strong>我们共存于共同的家园</strong>
+		          </div>
+		        </li>
+		        <li style="background: url('images/banner02.jpg') center center no-repeat;background-size: cover;">
+		          <div class="t">
+		            <h1>关注濒危野生动物</h1>               
+		            <strong>为世界原生态永存而努力</strong>
+		          </div>
+		        </li>
+		        <li style="background: url('images/banner03.jpg') center center no-repeat;background-size: cover;">
+		          <div class="t">
+		            <h1>保护野生动物 维护生态安全</h1>               
+		            <strong>拒食野生动物，倡导文明新风</strong>
+		          </div>
+		        </li>
+		        <li style="background: url('images/banner04.jpg') center center no-repeat;background-size: cover;">
+		          <div class="t">
+		            <h1>没有买卖，就没有杀害</h1>               
+		            <strong>我们相信着</strong>
+		          </div>
+		        </li>
+		        <li style="background: url('images/banner05.jpg') center center no-repeat;background-size: cover;">
+		          <div class="t">
+		            <h1>同在蓝天下</h1>               
+		            <strong>共享大自然</strong>
+		          </div>
+		        </li>
+		    </ul>
+		</div>
+	<!-- 内容 -->
+	<div class="content">
+		<!-- 第一部分 新增野生动物 -->
+		<!-- 悬停图片变化效果 -->
+		<section class="marginTop">
+			<div class='title'><strong>新增野生动物<span class='lineL'></span><span class='lineR'></span></strong></div>
+			<h1  class="title_more"><a href="#">更多></a></h1>
+			<div class="con1">
+				<li>
+					<a href="#"><img src="images/con1_01.jpg"/></a>
+					<div class="text">
+						<p class="p1"><a href="#">小头睡鲨</a></p>
+						<p class="p2"><span>两栖，鱼类及其它</span> <span>2016-08-14</span></p>
+						<p class="p3">小头睡鲨（拉丁文学名：Somniosus microcephalus），又名格陵兰鲨、大西洋睡鲨、灰鲨，是一种大型的鲨鱼，生活在格陵兰和冰岛周围的北大西洋海域。小头睡鲨的居住地比任何鲨鱼位于更北之地。它们是太平洋睡鲨的近亲。小头睡鲨的身长很震撼，因为事实上它们很大，它们的体长可以跟大白鲨媲美，甚至可能比大白鲨更大。</p>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="images/con1_02.jpg"/></a>
+					<div class="text">
+						<p class="p1"><a href="#">转角牛羚</a></p>
+						<p class="p2"><span>哺乳纲</span> <span>2016-08-13</span></p>
+						<p class="p3">转角牛羚（学名：Damaliscus lunatus），又称南非大羚羊或黑面狷羚，是一种生活在苏丹、乍得、坦桑尼亚及南非大草原及泛滥平原的狷羚。保护依赖（IUCN 2.3）</p>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="images/con1_03.jpg"/></a>
+					<div class="text">
+						<p class="p1"><a href="#">高角羚</a></p>
+						<p class="p2"><span>哺乳纲</span> <span>2016-08-13</span></p>
+						<p class="p3">高角羚（学名：Aepyceros melampus），别名黑斑羚、飞羚，是一种中等体型的羚羊，分布于非洲东部和南部。高角羚由德国动物学家辛里奇·利希滕斯坦于1812年命名，是高角羚属的唯一物种，下有高角羚亚种和黑面高角羚亚种。高角羚肩高约70－92厘米，体重约40－76千克，体表覆盖着光滑而略带红棕色的毛。雄性高角羚的角可长达45－92厘米。</p>
+					</div>
+				</li>
+			</div>
+			<div class="con1"  style="margin-top:0">
+				<li>
+					<a href="#"><img src="images/con1_04.jpg"/></a>
+					<div class="text">
+						<p class="p1"><a href="#">黄胸织布鸟</a></p>
+						<p class="p2"><span>鸟纲</span> <span>2016-08-13</span></p>
+						<p class="p3">黄胸织布鸟（学名：Ploceus philippinus）为文鸟科织布鸟属的鸟类。分布于巴基斯坦、印度、孟加拉国、缅甸、泰国、越南、马来半岛、印度尼西亚以及中国大陆的云南等地，主要栖息于在云南、见于海拔约1200m 以下的盆地或开阔的河谷地带以及活动于开阔的田野、园林庭院或濒水的草丛、灌丛等地。该物种的模式产地在斯里兰卡。</p>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="images/con1_05.jpg"/></a>
+					<div class="text">
+						<p class="p1"><a href="#">侏三趾树懒</a></p>
+						<p class="p2"><span>哺乳纲</span> <span>2016-08-13</span></p>
+						<p class="p3">侏三趾树懒（学名：Bradypus pygmaeus）是树懒属下的一种，仅在巴拿马博卡斯德尔托罗省的一个名叫Isla Escudo de Veraguas小岛上生活。一如其名，此种对比起其在大陆上生活的近亲，体型细小得多，体重仅是它们的40%，体型也较它们小20%，相信是与岛屿隔离有关。过往的观察发现此种特化成仅在该岛上的红树林生境生活。</p>
+					</div>
+				</li>
+				<li>
+					<a href="#"><img src="images/con1_06.jpg"/></a>
+					<div class="text">
+						<p class="p1"><a href="#">留尼旺孤鸽</a></p>
+						<p class="p2"><span>灭绝物种</span> <span>2016-08-12</span></p>
+						<p class="p3">留尼旺孤鸽（Threskiornis solitarius），早期有留尼旺渡渡鸟一称，且被认为有可能就是葡萄牙水手于1613年所发现的同一种渡渡鸟（Raphus solitarius）。是留尼旺已灭绝的特有种。</p>
+					</div>
+				</li>
+			</div>
+			<a href="#" class="more"><h2>查看全部 &gt;</h2></a>
+		</section>
+
+		<!-- 第二部分 最新公益活动 -->
+		<!-- 手风琴效果 -->
+		<section class="marginTop">
+			<div class='title'><strong>最新公益活动<span class='lineL'></span><span class='lineR'></span></strong></div>
+			<h1  class="title_more"><a href="#">更多></a></h1>
+			<div class="con2">
+				<li class="noactive2">
+					<img src="images/con2_01.jpg"/>
+					<span class="overlay"></span>
+					<div class="con_con">
+						<a href="#"><h1>拒绝鱼翅，珍惜鲨鱼</h1></a>
+						<div class="con_text">
+							<div class="text_left">
+								<h2>你知道吗？</h2>
+								<p>鲨鱼，是海洋生物链顶端的掠食者，可以控制鱼类数量、保障珊瑚礁健康以及海洋生态环境的总体平衡。</p>
+								<p>由于对鱼翅的需求，使每年超过7300万头鲨鱼被捕捞，采取割鳍弃鲨的方式，导致鲨鱼的数量日益减少。实际上，鱼翅并无特殊营养价值，且富集重金属。</p>
+							</div>
+							<div class="text_right">
+								<h2>你能做什么？</h2>
+								<ul>
+									<li>不要购买任何鱼翅食品，并告诉你的亲朋好友：海上切鳍极为残忍，鱼翅含有有毒物质，永远不要购买鱼翅</li>
+									<li>学习保护鲨鱼的知识，并分享出去</li>
+									<li>参与保护鲨鱼公益活动</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="btn">加入活动</a>
+					</div>
+				</li>
+				<li class="noactive2">
+					<img src="images/con2_02.jpg"/>
+					<span class="overlay"></span>
+					<div class="con_con">
+						<a href="#"><h1>低碳生活，保护北极熊</h1></a>
+						<div class="con_text">
+							<div class="text_left">
+								<h2>你知道吗？</h2>
+								<p>北极熊，是在北极里生长的熊，它是陆上最庞大的肉食动物,易危（IUCN 3.1）</p>
+								<p>由于全球气温的升高，北极的浮冰逐渐开始融化，北极熊昔日的家园已遭到一定程度的破坏，在未来的不久很可能灭绝，需要人类的保护。</p>
+							</div>
+							<div class="text_right">
+								<h2>你能做什么？</h2>
+								<ul>
+									<li>为保护北级熊，不应进行对其补杀等行为</li>
+									<li>环保主义者应呼吁减少误染以免全球性污染到北极；减少二氧化碳排放，以减缓北极冰溶</li>
+									<li>为了保护濒危动物应加强教育，提高全民保护意识</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="btn">加入活动</a>
+					</div>
+				</li>
+				<li class="noactive2">
+					<img src="images/con2_03.jpg"/>
+					<span class="overlay"></span>
+					<div class="con_con">
+						<a href="#"><h1>为海龟，减少白色污染</h1></a>
+						<div class="con_text">
+							<div class="text_left">
+								<h2>你知道吗？</h2>
+								<p>因受人类活动影响，目前有七种海龟面临灭绝风险。造成海龟种群数量减少的原因包括：兼捕和误捕、栖息地破坏、海洋垃圾和塑料、全球气候变化。</p>
+								<p>但主要原因是人类对海龟蛋、肉和壳的需求导致的非法捕捞和贸易。</p>
+							</div>
+							<div class="text_right">
+								<h2>你能做什么？</h2>
+								<ul>
+									<li>不要购买海龟制品，并告诉你的亲朋好友：永远不要购买犀海龟制品</li>
+									<li>在海边不乱扔垃圾，少用一次性塑料品</li>
+									<li>参与保护海龟公益活动</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="btn">加入活动</a>
+					</div>
+				</li>
+			</div>
+		</section>
+
+		<!-- 第三部分 最新动物新闻 -->
+		<section class="marginTop">
+			<div class='title'><strong>最新动物新闻<span class='lineL'></span><span class='lineR'></span></strong></div>
+			<h1  class="title_more"><a href="#">更多></a></h1>
+			<div class="con3">
+				<div class="context_left">
+					<div class="context_style">
+						<li>
+							<a href="#"><img src="images/con3_01.jpg" alt=""></a>
+							<a href="#">自然新疆油田公司“封井退出”还野生动物一方“净”土</a>
+						</li>
+						<li>
+							<a href="#"><img src="images/con3_02.jpg" alt=""></a>
+							<a href="#">痛心！87头大象在“最后的安全港湾”惨遭杀害！</a>
+						</li>
+						<li>
+							<a href="#"><img src="images/con3_03.jpg" alt=""></a>
+							<a href="#">艺术家把濒临灭绝的野生动物画在了日历上，北极熊、大熊猫赫然在列</a>
+						</li>
+					</div>
+					<div class="context_style">
+						<li>
+							<a href="#"><img src="images/con3_04.jpg" alt=""></a>
+							<a href="#">陷阱诱捕已经成为非洲狮的最大威胁</a>
+						</li>
+						<li>
+							<a href="#"><img src="images/con3_05.jpg" alt=""></a>
+							<a href="#">11种即将灭绝的动物，你认识哪些？</a>
+						</li>
+						<li>
+							<a href="#"><img src="images/con3_06.jpg" alt=""></a>
+							<a href="#">小海豹命丧保鲜膜，一片不起眼的塑料足以杀死一只动物！</a>
+						</li>
+					</div>
+				</div>
+				<div class="context_right">
+					<li>
+						<div class="context_style2">
+							<a href="#"><img src="images/con3_07.jpg" alt=""></a>
+							<a href="#" class="a_style">为保护野生动物 百度将关停更多贴吧 封禁相关用户</a>
+						</div>
+					</li>
+					<li style="padding-left:10px"><a href="#">一声叹息！海豚作为商业性渔业诱饵被大量捕杀</a></li>
+					<li style="padding-left:10px"><a href="#">80只塑料袋！领航鲸幼崽死亡 解剖显示胃中塞满垃圾</a></li>
+				</div>
+				<div class="context_bottom">
+						<li>
+							<a href="#"><img src="images/con3_08.jpg" alt=""></a>
+							<a href="#">日本将恢复商业捕鲸，这里有你想知道的</a>
+						</li>
+						<li>
+							<a href="#"><img src="images/con3_09.jpg" alt=""></a>
+							<a href="#">一个18岁女孩的受虐记录：钝器捶打，尖钩刺入皮肉</a>
+						</li>
+						<li>
+							<a href="#"><img src="images/con3_10.jpg" alt=""></a>
+							<a href="#">近十年消逝的那些鸟类</a>
+						</li>
+						<li>
+							<a href="#"><img src="images/con3_11.jpg" alt=""></a>
+							<a href="#">别再吃吃吃、买买买了！“濒危物种红名单”已经够长了！</a>
+						</li>
+					</div>
+			</div>
+
+		</section>
+
+		<!-- 第四部分 最新记录片收录 -->
+		<!-- 悬停图片变化效果 -->
+		<section class="marginTop">
+			<div class='title'><strong>最新记录片收录<span class='lineL'></span><span class='lineR'></span></strong></div>
+			<h1  class="title_more"><a href="#">更多></a></h1>
+			<div class="con4">
+				<li><a href="#"><img src="images/con4_01.jpg" alt=""></a><span class="btn-dnld"></span><a href="#"  class="title2">《王朝 Dynasties》（2018）</a><span>2018-10-05</span></li>
+				<li><a href="#"><img src="images/con4_02.jpg" alt=""><span class="btn-dnld"></a></span><a href="#"  class="title2">《纳勒迪：一只小象的故事》（2016）</a><span>2018-10-05</span></li>
+				<li><a href="#"><img src="images/con4_03.jpg" alt=""></a><span class="btn-dnld"></span><a href="#"  class="title2">《大猫 Big Cats》（2018）</a><span>2018-10-05</span></li>
+				<li><a href="#"><img src="images/con4_04.jpg" alt=""></a><span class="btn-dnld"></span><a href="#"  class="title2">《奇特的动物伙伴 Animal Odd Couples》（2013）</a><span>2018-10-05</span></li>
+				<li><a href="#"><img src="images/con4_05.jpg" alt=""></a><span class="btn-dnld"></span><a href="#"  class="title2">《帝企鹅日记2：召唤》</a><span>2018-10-05</span></li>
+				<li><a href="#"><img src="images/con4_06.jpg" alt=""></a><span class="btn-dnld"></span><a href="#"  class="title2">《狼医学/狼，人类的解药 Medicine of the Wolf》（2015）</a><span>2018-10-05</span></li>
+			</div>
+		</section>
+	</div>
+
+	<!-- jq实现增删改查 -->
+	<!-- 每日小目标功能管理模块 -->
+	<section style="margin-top:150px;position:relative">
+		<div class="aim">
+		<a class="close" style="float:right;font-size:14px">关闭</a>
+			  <div class='td_title'><strong>每日小目标<span class='lineL'></span><span class='lineR'></span></strong></div>
+			   	<table class="tab">
+			   		<tr>
+			   			<td>时间</td>
+			   			<td>目标</td>
+			   			<td>操作</td>
+			   		</tr>
+			   		<tr>
+			   			<td>2019-01-01</td>
+			   			<td>收养一条小动物</td>
+			   			<td>
+			          		<input type="button" value="查看"/>
+			   				<input type="button" value="修改"/>
+			   				<input type="button" value="删除"/>        
+			   			</td>
+			   		</tr>
+			   		<tr>
+			        <td>2018-12-01</td>
+			        <td>通过义卖得来的资金捐给基金会</td>
+			   			<td>
+			   				<input type="button" value="查看"/>
+			          <input type="button" value="修改"/>
+			   				<input type="button" value="删除"/>
+			   			</td>
+			   		</tr>
+			      <tr>
+			        <td>2018-11-21</td>
+			        <td>参加义工捡垃圾</td>
+			        <td>
+			          <input type="button" value="查看"/>
+			          <input type="button" value="修改"/>
+			          <input type="button" value="删除"/>
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>2018-11-20</td>
+			        <td>赚钱领养小动物</td>
+			        <td>
+			          <input type="button" value="查看"/>
+			          <input type="button" value="修改"/>
+			          <input type="button" value="删除"/>
+			        </td>
+			      </tr>
+			      <tr>
+			        <td>2018-10-21</td>
+			        <td>关注野生动物的现况</td>
+			        <td>
+			          <input type="button" value="查看"/>
+			          <input type="button" value="修改"/>
+			          <input type="button" value="删除"/>
+			        </td>
+			      </tr>
+			   		<tr>
+			   			<td><input id="Time"/></td>
+			 			<td><input id="Aim"/></td>
+			 			<td><input type="button" value="增加"/></td>
+			   		</tr>    
+			   	</table>
+			</div> 
+			<div class="popDiv" style="z-index:50;">
+			        <p><strong>时间:</strong><span></span></p><br>
+			        <p><strong>目标:</strong><span></span></p><br>
+			        <a class="close2">关闭</a>
+			    </div> 
+
+			<!-- 第五部分 -->
+			<div class="con5">
+				<p class="title3">让我们一起分享奇妙的动物世界<br>
+				Let us share the wonderful animal world</p>
+				<p class="summary">欢迎来到-野生小伙伴，我们在展示这个令人惊叹的自然世界的同时，希望将关爱动物和环境保护意识，更广泛的传播，<br>我们发展的未来寄希望于越来越多的支持者和参与者，期望有更多的人加入到热爱和保护自然环境的家庭中。</p>
+				<a><p class="btn">每日小目标</p></a>
+			</div>
+	</section>
+	
+	<!-- 底部 -->
+	<footer class="footer">
+		<span class="span1">关于我们 | 联系我们 | 免责声明 | 网站公告 | 加入我们 | 服务条款 | 网站基金 | 留言板</span>
+		<span class="span2">版权© X队</span>
+	</footer>
+</body>
+</html>
